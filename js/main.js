@@ -169,7 +169,7 @@ $(document).ready(function(){
           const stylesheet = document.createElement('link');
           stylesheet.href = src;
 		  stylesheet.rel = 'preload';
-		  stylesheet.as = 'font';
+		  stylesheet.as = 'style'
           stylesheet.type = 'text/css';
           document.getElementsByTagName('head')[0].appendChild(stylesheet);
         }
@@ -177,7 +177,6 @@ $(document).ready(function(){
 
 	// All of the objects are in the DOM, and all the images, scripts, links have finished loading.
 	window.onload = function () {
-	console.log('window done!')
 	loadStyleSheet('./css/owl.carousel.css');
 	loadStyleSheet('./css/owl.transitions.css');
 	};
