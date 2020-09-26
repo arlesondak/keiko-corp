@@ -168,7 +168,7 @@ $(document).ready(function(){
         else {
           const stylesheet = document.createElement('link');
           stylesheet.href = src;
-          stylesheet.rel = 'stylesheet';
+          stylesheet.rel = 'preload';
           stylesheet.type = 'text/css';
           document.getElementsByTagName('head')[0].appendChild(stylesheet);
         }
