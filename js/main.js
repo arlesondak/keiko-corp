@@ -168,7 +168,8 @@ $(document).ready(function(){
         else {
           const stylesheet = document.createElement('link');
           stylesheet.href = src;
-          stylesheet.rel = 'preload';
+		  stylesheet.rel = 'preload';
+		  stylesheet.as = 'font';
           stylesheet.type = 'text/css';
           document.getElementsByTagName('head')[0].appendChild(stylesheet);
         }
