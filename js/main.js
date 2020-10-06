@@ -161,25 +161,25 @@ $(document).ready(function(){
 
 	});
 
-    const loadStyleSheet = (src) =>{
-        if (document.createStyleSheet) {
-          document.createStyleSheet(src);
-        }
-        else {
-          const stylesheet = document.createElement('link');
-          stylesheet.href = src;
-		  stylesheet.rel = 'preload';
-		  stylesheet.as = 'style'
-          stylesheet.type = 'text/css';
-          document.getElementsByTagName('head')[0].appendChild(stylesheet);
-        }
-    }
+    // const loadStyleSheet = (src) =>{
+    //     if (document.createStyleSheet) {
+    //       document.createStyleSheet(src);
+    //     }
+    //     else {
+    //       const stylesheet = document.createElement('link');
+    //       stylesheet.href = src;
+	// 	  stylesheet.rel = 'preload';
+	// 	  stylesheet.as = 'style'
+    //       stylesheet.type = 'text/css';
+    //       document.getElementsByTagName('head')[0].appendChild(stylesheet);
+    //     }
+    // }
 
-	// All of the objects are in the DOM, and all the images, scripts, links have finished loading.
-	window.onload = function () {
-	loadStyleSheet('./css/owl.carousel.css');
-	loadStyleSheet('./css/owl.transitions.css');
-	};
+	// // All of the objects are in the DOM, and all the images, scripts, links have finished loading.
+	// window.onload = function () {
+	// loadStyleSheet('./css/owl.carousel.css');
+	// loadStyleSheet('./css/owl.transitions.css');
+	// };
 
 
 });
